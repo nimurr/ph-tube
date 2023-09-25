@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width:90%;
+    margin: 30px  auto;
+}
+header hr{
+    height: 2px;
+    background: #c3c3c3;
+    border: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+header button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.sortView{
+    background: #ccc;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+.blogBtn{
+    background: #FF1F3D;
+    font-weight: 600;
+    font-size: 15px;
+    color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+}
+
+#tabs{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#tabs a{
+    padding: 10px 25px;
+    background: #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+#tabs a:focus{
+    background: red;
+    color: #fff;
+
+}
+
+
+
+/* cards */
+
+#cards {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:40px 20px;
+}
+#cards > div > img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px; 
+}
+#cards > div{
+    position: relative;
+}
+.img-overly-text{ 
+    position: absolute;
+    top: 210px;
+    right: 10px;
+    background: #dc6e6edb;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+
+#cards > div > div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.card-body-text{
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+.card-body-text p{
+    margin: 5px 0;
+    font-weight: 600;
+    color: #9d9d9d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cards > div > div > div img{
+    width: 20px;
+    height: 20px;
+}
+#cards > div > div > div span{
+    color: #888;
+}
+.hidden{
+    display: none;
+}
+.notfoundItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.notfoundItem img{
+    width: 200px;
+}

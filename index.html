@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PHero tube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!----------------- header section ------------->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <button onclick="sortView()" class="sortView">Sort by view</button>
+            <a href="blog.html" target="_blank"><button class="blogBtn" onclick="sortView()"> Blog </button></a>
+        </div>
+        <hr>
+    </header>
+
+    <!------------ main section --------------->
+    <main>
+
+        <div id="tabs">
+
+        </div>
+
+        <div id="cards">
+
+        </div>
+
+        <div id="noteFound" class="hidden">
+            <div class="notfoundItem">
+                <img src="img/Icon2.png" alt="">
+                <br>
+                <h2>Oops!! Sorry, There is no content here</h2>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
